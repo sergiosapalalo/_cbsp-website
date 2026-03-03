@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: 60px 1fr / 1fr;
+    grid-template-areas: "header" "main";
+    font-family: var(--FontFamily);
+    color: var(--Foreground);
+    letter-spacing: 1px;
+}
+
+.header {
+    grid-area: header;
+    border-bottom: 1px solid var(--Muted);
+}
+
+.main {
+    grid-area: main;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*MENU HAMBURGUER CONFIG*/
+    .header {
+        width: 100%;
+        background-color: var(--Background);
+        z-index: 1000;
+        height: 60px;
+        position: fixed;
+
+    }
+
+    .header .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 12px;
+        background-color: var(--CardBackground);
+        z-index: 999;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+
+    }
+
+    .nav-bar .logo-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+    .logo-btn.addBorder{
+        border-bottom: 1px solid var(--Muted);
+
+    }
+
+    .logo {
+        display: flex;
+        gap: 5px;
+        font-size: var(--text-lg);
+        color: var(--Primary);
+    }
+
+    .logo span {
+        align-self: flex-end;
+        display: none;
+    }
+
+    .nav-bar .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: var(--CardBackground);
+        padding: 0 10px;
+        list-style: none;
+        transition: max-height .5s ease;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        z-index: 900;
+    }
+
+    .nav-list.showMenu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+    }
+
+    .nav-list .nav-item {
+        padding: 3px;
+        justify-content: center;
+        border-radius: var(--radius-md);
+        width: 100%;
+        margin-top: 8px;
+        transition: all .1s ease-in-out;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    .nav-item:hover {
+        background-color: var(--Background);
+    }
+
+    .nav-list.delay .nav-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-list.delay .nav-item:nth-child(1) {
+        transition-delay: .1s;
+    }
+
+    .nav-list.delay .nav-item:nth-child(2) {
+        transition-delay: .2s;
+    }
+
+   .nav-list.delay .nav-item:nth-child(3) {
+        transition-delay: .3s;
+    }
+
+    .nav-list.delay .nav-item:nth-child(4) {
+        transition-delay: .4s;
+    }
+
+    .nav-list.delay .nav-item:nth-child(5) {
+        transition-delay: .5s;
+    }
+
+   .nav-list.delay .nav-item:nth-child(6) {
+        transition-delay: .6s;
+    }
+
+    .nav-list #talk-to-us {
+        background-color: var(--Primary);
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #talk-to-us a {
+        color: var(--Background);
+    }
+     #talk-to-us:hover{
+        transition: background-color .5s ease;
+        background-color: var(--AccentBlue);
+     }
+
+
+    .nav-list .nav-link {
+        padding: 5px;
+        color: var(--Foreground);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        font-weight: var(--weight-sb);
+        color: var(--Foreground);
+        font-size: var(--text-xm);
+        cursor: pointer;
+    }
+
+    .btn-menu {
+        width: 25px;
+        border: none;
+        background-color: var(--CardBackground);
+    }
+
+    .btn-menu div {
+        height: 3px;
+        margin-top: 6px;
+        background-color: var(--Primary);
+        transition: all .3s ease-in-out;
+    }
+
+    .btn-menu.closeBtn div:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .btn-menu.closeBtn div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .btn-menu.closeBtn div:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, .4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 900;
+
+    }
+
+    .no-scroll{
+        overflow: hidden;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) {}
+
+@media screen and (min-width: 1024px) {}

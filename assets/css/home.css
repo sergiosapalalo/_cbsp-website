@@ -1,0 +1,39 @@
+
+.main{
+    width: 100vw;
+}
+
+#hero-section{
+    height: 100vh;
+    padding: 15px;
+    background-image: linear-gradient(-55deg, var(--Primary), var(--AccentBlue) , var(--Primary));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-section .text-inform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--Background);
+}
+.text-inform h1, p{
+    text-align: center;
+}
+
+.btn-contacts{
+ display: flex;
+ flex-direction: column;   
+ justify-content: center;
+ margin-top: 20px;
+ width: 100%;
+}
+.btn-contacts button{
+  
+}
+#hero-section .mascote-img{
+    display: none;
+}
