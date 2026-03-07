@@ -1,39 +1,155 @@
+@media screen and (max-width: 768px) {
 
-.main{
-    width: 100vw;
-}
 
-#hero-section{
-    height: 100vh;
-    padding: 15px;
-    background-image: linear-gradient(-55deg, var(--Primary), var(--AccentBlue) , var(--Primary));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    #hero-section {
+        padding: 5rem 1.2rem;
+        background-image: linear-gradient(-55deg, var(--Primary), var(--AccentBlue), var(--Primary));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-#hero-section .text-inform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: var(--Background);
-}
-.text-inform h1, p{
-    text-align: center;
-}
+    }
 
-.btn-contacts{
- display: flex;
- flex-direction: column;   
- justify-content: center;
- margin-top: 20px;
- width: 100%;
-}
-.btn-contacts button{
-  
-}
-#hero-section .mascote-img{
-    display: none;
+    #hero-section .text-inform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: center;
+        color: var(--Background);
+        width: 98%;
+        margin: auto;
+    }
+
+    .text-inform h1,
+    p {
+        text-align: center;
+    }
+
+    .text-inform p {
+        font-size: 1.05rem;
+        text-align: jstify;
+    }
+
+    .text-inform .btn-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 40px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .btn-contacts button {
+        height: 50%;
+        border: none;
+        border-radius: var(--radius-md);
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+
+    .btn-contacts button a {
+        text-decoration: none;
+        font-size: var(--text-md);
+    }
+
+    .btn-contacts #require-budget {
+        background-color: var(--Background);
+        color: var(--Primary);
+    }
+
+    .btn-contacts #require-budget:hover {
+        background-color: var(--Muted);
+    }
+
+    #require-budget a {
+        color: var(--Primary);
+    }
+
+    .btn-contacts #talk-to-us {
+        background-color: transparent;
+        color: var(--Primary);
+        border: 1px solid var(--CardBackground);
+    }
+
+    .btn-contacts #talk-to-us:hover {
+        background-color: var(--PrimaryHover);
+
+    }
+
+    #talk-to-us a {
+        color: var(--Background);
+    }
+
+    #hero-section .mascote-img {
+        display: none;
+    }
+
+    .main .who-are-we {
+        padding: 4rem 1.2rem;
+    }
+
+    .who-are-we h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .who-are-we p {
+        color: var(--ForegroundDark);
+        font-weight: var(--weight-lg);
+        font-size: 1.05rem;
+        text-align: justify;
+    }
+
+    .main .what-we-do {
+        padding: 4rem 1.2rem;
+        background-color: var(--MutedB);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .what-we-do h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .what-we-do .cards {
+        height: 200px;
+        background-color: var(--Background);
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        transition: all .5s ease-in-out;
+    }
+    .what-we-do .cards:hover{
+        border: 1px solid var(--AccentBlue);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+    .cards .icon-area{
+        height: 50px;
+        width: 50px;
+        border: 1px solid var(--Muted);
+        padding: 5px;
+        border-radius: var(--radius-md);
+    }
+    .cards .desc-area{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .desc-area p{
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--ForegroundDark);
+    }
 }

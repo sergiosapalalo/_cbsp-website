@@ -2,6 +2,7 @@
 
     /*PALETA*/
     --Primary: #123a8a;
+    --PrimaryHover: #2953a733;
     --Secondary: #3b82f6;
     --AccentBlue: #1e1b4b;
 
@@ -11,6 +12,7 @@
     --MutedB: #e5e7e9;
 
     --Foreground: #1b1e46;
+    --ForegroundDark: #0c0e20;
     --MutedForeground: #2c3e50;
 
     --Destructive: #d4183d;
@@ -51,6 +53,7 @@
     /*Text Weigth*/
     --weight-lg: lighter;
     --weight-nl: normal;
+    --weight-nl1: 300;
     --weight-sb: 400;
     --weight-bd: 500;
     --weight-br: bold;
