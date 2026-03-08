@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        min-height: 100vh;
     }
 
     #hero-section .text-inform {
@@ -129,27 +129,184 @@
         justify-content: center;
         gap: 10px;
         margin-bottom: 20px;
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
+        border: 1px solid transparent;
     }
-    .what-we-do .cards:hover{
-        border: 1px solid var(--AccentBlue);
+
+    .what-we-do .cards:hover {
+        border-color: var(--AccentBlue);
         box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
     }
-    .cards .icon-area{
+
+    .cards .icon-area {
         height: 50px;
         width: 50px;
-        border: 1px solid var(--Muted);
-        padding: 5px;
         border-radius: var(--radius-md);
     }
-    .cards .desc-area{
+
+    .icon-area svg {
+        border-radius: var(--radius-md);
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        color: var(--Primary);
+        background-color: var(--MutedB);
+        transition: all .3s ease-in-out;
+    }
+
+    .cards:hover svg {
+        background-color: var(--Primary);
+        color: var(--Background);
+    }
+
+    .cards .desc-area {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .desc-area p{
+
+    .desc-area p {
         text-align: start;
         font-weight: var(--weight-nl1);
         color: var(--ForegroundDark);
+        font-size: 1.05rem;
+
     }
-}
+
+    /*recently works*/
+    .main .recently-projects {
+        padding: 4rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recently-projects h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .recently-projects .project-cards {
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        transition: all .3s ease-in-out;
+        border: 1px solid var(--Muted);
+    }
+
+    .project-cards:hover {
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .project-cards h3 {
+        color: var(--Primary);
+    }
+
+    .project-cards h4 {
+        color: var(--AccentBlue);
+        font-weight: var(--weight-sb);
+    }
+
+    .project-cards p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--ForegroundDark);
+        font-size: 1.05rem;
+
+    }
+
+    .project-cards a {
+        color: var(--Primary);
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        transition: all 5s ease;
+    }
+
+    .project-cards a:hover svg {
+        margin-left: 5px;
+    }
+
+    .main .why-choose-us {
+        padding: 4rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--MutedB);
+    }
+
+    .why-choose-us h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .why-choose-us div {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        margin: 0 10px;
+
+    }
+
+    .why-choose-us p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--AccentBlue);
+        font-size: 1.05rem;
+
+    }
+
+    .why-choose-us svg {
+        color: var(--Primary);
+        flex-shrink: 0;
+
+    }
+
+    .main .contact-section {
+        padding: 4rem 0;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: var(--Secondary);
+        background-image: linear-gradient(to right, var(--Secondary), var(--Primary));
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+        color: var(--Background);
+        }
+        .contact-section button{
+            height: 55px;
+            width: 65%;
+            margin: auto;
+            border: none;
+            border-radius: var(--radius-md);
+            background-color: var(--Background);
+            transition: all .1s ease;
+        }
+        .contact-section button:hover{
+            background-color: var(--Muted);
+        }
+        .contact-section button a{
+            text-decoration: none;
+            color: var(--AccentBlue);
+            font-size: var(--text-md);
+        }
+   
+   
+    }
+

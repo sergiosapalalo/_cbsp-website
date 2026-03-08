@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template: 60px 1fr / 1fr;
     grid-template-areas: "header" "main";
@@ -58,7 +58,8 @@ body {
         width: 100%;
         height: 60px;
     }
-    .logo-btn.addBorder{
+
+    .logo-btn.addBorder {
         border-bottom: 1px solid var(--Muted);
 
     }
@@ -124,7 +125,7 @@ body {
         transition-delay: .2s;
     }
 
-   .nav-list.delay .nav-item:nth-child(3) {
+    .nav-list.delay .nav-item:nth-child(3) {
         transition-delay: .3s;
     }
 
@@ -136,7 +137,7 @@ body {
         transition-delay: .5s;
     }
 
-   .nav-list.delay .nav-item:nth-child(6) {
+    .nav-list.delay .nav-item:nth-child(6) {
         transition-delay: .6s;
     }
 
@@ -149,10 +150,11 @@ body {
     #talk-to-us a {
         color: var(--Background);
     }
-     #talk-to-us:hover{
+
+    #talk-to-us:hover {
         transition: background-color .5s ease;
         background-color: var(--AccentBlue);
-     }
+    }
 
 
     .nav-list .nav-link {
@@ -208,8 +210,96 @@ body {
 
     }
 
-    .no-scroll{
+    .no-scroll {
         overflow: hidden;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        background-color: var(--AccentBlue);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: var(--Muted);
+        padding: 20px;
+    }
+
+    .footer div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer div h2,
+    .footer div h4 {
+        margin: 10px 0;
+        color: var(--Background);
+    }
+
+    .footer h4 {
+        font-weight: var(--weight-bd);
+    }
+
+    .footer div a {
+        color: var(--Muted);
+        text-decoration: none;
+    }
+
+    .footer div a:hover {
+        color: var(--CardBackground);
+    }
+
+    .footer div p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        padding: 3px;
+        font-size: 1.05rem;
+
+    }
+
+    .footer .signature {
+        border-top: 1px solid var(--MutedB);
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+
+    .signature p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    .footer #contact-div p {
+        display: flex;
+        gap: 8px;
+    }
+
+    #contact-div p svg {
+        height: 18px;
+        color: var(--Muted);
+    }
+
+    #contact-div p:hover svg,
+    #contact-div svg:hover {
+        color: var(--CardBackground);
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        bottom: 25px;
+        right: 20px;
+        border: none;
+        background: none;
+        padding: 13px;
+        background-color: var(--ZapButton);
+        border-radius: var(--radius-full);
+
+    }
+
+    .whatsapp-button svg {
+        color: var(--Background);
+        height: 25px;
+        width: 28px;
     }
 }
 
