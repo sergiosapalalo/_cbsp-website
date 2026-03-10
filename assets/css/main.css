@@ -8,7 +8,6 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template: 60px 1fr / 1fr;
     grid-template-areas: "header" "main";
     font-family: var(--FontFamily);
     color: var(--Foreground);
@@ -22,12 +21,16 @@ body {
 
 .main {
     grid-area: main;
-    width: 100vw;
+    width: 100%;
 
 }
 
 
 @media screen and (max-width: 768px) {
+    body {
+        grid-template: 60px 1fr / 1fr;
+
+    }
 
     /*MENU HAMBURGUER CONFIG*/
     .header {
@@ -47,7 +50,7 @@ body {
         padding: 5px 12px;
         background-color: var(--CardBackground);
         z-index: 999;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
 
     }
 
@@ -108,6 +111,26 @@ body {
         transform: translateY(-10px);
     }
 
+    #talk-to-us {
+        background-color: var(--Primary);
+        width: 90%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    #talk-to-us a {
+        color: var(--Background);
+    }
+
+    #talk-to-us:hover {
+        transition: background-color .5s ease;
+        background-color: var(--AccentBlue);
+    }
+
+    .btn-talk-to-us {
+        display: none;
+    }
+
     .nav-item:hover {
         background-color: var(--Background);
     }
@@ -141,20 +164,6 @@ body {
         transition-delay: .6s;
     }
 
-    .nav-list #talk-to-us {
-        background-color: var(--Primary);
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    #talk-to-us a {
-        color: var(--Background);
-    }
-
-    #talk-to-us:hover {
-        transition: background-color .5s ease;
-        background-color: var(--AccentBlue);
-    }
 
 
     .nav-list .nav-link {
@@ -258,7 +267,7 @@ body {
     }
 
     .footer .signature {
-        border-top: 1px solid var(--MutedB);
+        border-top: 1px solid var(--BorderColor);
         padding: 10px 0;
         margin: 10px 0;
     }
@@ -305,6 +314,202 @@ body {
 
 
 
-@media screen and (min-width: 769px) {}
+@media screen and (min-width: 768px) {
+
+    .header {
+        height: 70px;
+        border: none;
+        width: 100%;
+        position: fixed;
+        border-bottom: 1px solid var(--MutedB);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, .08);
+
+    }
+
+    .main {
+        margin-top: 70px;
+    }
+
+    .header .nav-bar {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--CardBackground);
+        padding: 5px 50px;
+    }
+
+    .logo-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-btn .btn-menu {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        gap: 5px;
+        font-size: var(--text-lg);
+        color: var(--Primary);
+    }
+
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+
+    .logo span {
+        align-self: flex-start;
+        font-size: var(--text-sm);
+        margin-top: 5px;
+    }
+
+    .nav-bar .nav-list {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        list-style: none;
+        transition: all .5s ease;
+        gap: 45px;
+    }
+
+
+    .nav-list #talk-to-us {
+        display: none;
+    }
+
+    .nav-list .nav-link {
+        color: var(--Foreground);
+        text-decoration: none;
+        font-weight: var(--weight-sb);
+        color: var(--Foreground);
+        font-size: var(--text-xm);
+        cursor: pointer;
+    }
+
+    .nav-link:hover {
+        color: var(--Primary);
+    }
+
+    .btn-talk-to-us {
+        background-color: var(--Primary);
+        padding: 13px 15px;
+        border-radius: var(--radius-md);
+        border: none;
+        transition: all .2s ease;
+    }
+
+    .btn-talk-to-us a {
+        color: var(--Background);
+        text-decoration: none;
+    }
+
+    .btn-talk-to-us:hover {
+        transition: background-color .5s ease;
+        background-color: var(--AccentBlue);
+    }
+
+
+    /*FOOTER*/
+
+    .footer {
+        background-color: var(--AccentBlue);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: var(--Muted);
+        padding: 20px;
+    }
+
+    .footer .footer-info {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3rem 1rem;
+    }
+
+    .name-slogan {
+        width: 350px;
+    }
+
+    .foter div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer div h2,
+    .footer div h4 {
+        margin: 10px 0;
+        color: var(--Background);
+    }
+
+    .footer h4 {
+        font-weight: var(--weight-bd);
+    }
+
+    .footer div a {
+        color: var(--Muted);
+        text-decoration: none;
+    }
+
+    .footer div a:hover {
+        color: var(--CardBackground);
+    }
+
+    .footer div p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        padding: 3px;
+        font-size: 1.05rem;
+
+    }
+
+    .footer .signature {
+        border-top: 1px solid var(--BorderColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    .signature p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    .footer #contact-div p {
+        display: flex;
+        gap: 8px;
+    }
+
+    #contact-div p svg {
+        height: 18px;
+        color: var(--Muted);
+    }
+
+    #contact-div p:hover svg,
+    #contact-div svg:hover {
+        color: var(--CardBackground);
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        bottom: 25px;
+        right: 20px;
+        border: none;
+        background: none;
+        padding: 13px;
+        background-color: var(--ZapButton);
+        border-radius: var(--radius-full);
+
+    }
+
+    .whatsapp-button svg {
+        color: var(--Background);
+        height: 27px;
+        width: 30px;
+    }
+}
 
 @media screen and (min-width: 1024px) {}

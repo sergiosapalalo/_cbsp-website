@@ -10,11 +10,24 @@
     <script src="assets/js/main.js" defer></script>
 
      <style>
-         #visited{
-            background-color: var(--MutedB);
+         @media screen and (max-width: 768px) {
+            
+            #visited {
+                background-color: var(--MutedB);
+            }
+    
+            #visited a {
+                color: var(--Primary);
+            }
         }
-        #visited a{
-            color: var(--Primary);
+        @media screen and (min-width: 768px) {
+            
+          
+    
+            #visited a {
+                color: var(--Primary);
+                font-weight: var(--weight-bd);
+            }
         }
     </style>
 </head>
@@ -40,19 +53,97 @@
                 <li class="nav-item"><a href="contacts.html" class="nav-link">Contactos</a></li>
                 <li class="nav-item" id="talk-to-us"><a href="contacts.html" class="nav-link">Fale Connosco</a></li>
             </ul>
-          
+           <button class="btn-talk-to-us">
+                <a href="contacts.html" class="nav-link">Fale Connosco</a>
+            </button>
         </nav>
     </header>
 <div class="overlay"></div>
 
     <main class="main">
         <h1>Projects</h1>
+
+
+        <!--FOOTER SECTION-->
+        <footer class="footer">
+            <div class="footer-info">
+                <div class="name-slogan">
+                    <h2>CBSP, Lda</h2>
+                    <p>Soluções tecnológicas inteligentes para empresas e particulares.</p>
+                </div>
+                <div>
+                    <h4>Navegação</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">Sobre</a></p>
+                    <p><a href="services.html">Serviços</a></p>
+                    <p><a href="projects.html">Projetos</a></p>
+                    <p><a href="contacts.html">Contactos</a></p>
+                </div>
+                <div>
+                    <h4>Serviços</h4>
+                    <p>Serviços de TI</p>
+                    <p>Comércio de Electrónicos</p>
+                    <p>Suporte Técnico</p>
+                    <p>Soluções Empresariais</p>
+                </div>
+                <div id="contact-div">
+                    <h4>Contacto</h4>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone-icon lucide-phone">
+                            <path
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>
+                        <a href="+244 244944137349">+244 244944137349</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-message-circle-icon lucide-message-circle">
+                            <path
+                                d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+                        </svg>
+                        <a href="https//wa.me/244944137349">WhatsApp</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail-icon lucide-mail">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                        </svg>
+                        <a href="mailto:suporte.cbsp@gmail.com">suporte.cbsp@gmail.com</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <a href="">Lubango, Angola</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="signature">
+                <p>&copy; 2026 CBSP, Lda. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
 
-
-    <footer class="footer">
-        Footer
-    </footer>
+<button class="whatsapp-button">
+        <a href="https/wa.me/244944137349" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-message-circle-icon lucide-message-circle">
+                <path
+                    d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+            </svg>
+        </a>
+    </button>
 </body>
 
 </html>
