@@ -1,39 +1,690 @@
+@media screen and (max-width: 768px) {
 
-.main{
-    width: 100vw;
+
+    #hero-section {
+        padding: 5rem 1.2rem;
+        background-image: linear-gradient(135deg, var(--Primary) 0%, var(--AccentBlue) 45% 55%, var(--Primary)100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    #hero-section .text-inform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: center;
+        color: var(--Background);
+        width: 98%;
+        margin: auto;
+    }
+
+    .text-inform h1,
+    p {
+        text-align: center;
+    }
+
+    .text-inform p {
+        font-size: 1.05rem;
+        text-align: jstify;
+    }
+
+    .text-inform .btn-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 60px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .btn-contacts button {
+        height: 50%;
+        width: 100%;
+        border: none;
+        border-radius: var(--radius-md);
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+
+    .btn-contacts button a {
+        text-decoration: none;
+        font-size: var(--text-md);
+    }
+
+    .btn-contacts #require-budget {
+        background-color: var(--Background);
+        color: var(--Primary);
+    }
+
+    .btn-contacts #require-budget:hover {
+        background-color: var(--Muted);
+    }
+
+    #require-budget a {
+        color: var(--Primary);
+    }
+
+
+    .btn-contacts #talk-to-us-btn {
+        background-color: transparent;
+        color: var(--Primary);
+        border: 1px solid var(--CardBackground);
+    }
+
+    .btn-contacts #talk-to-us-btn:hover {
+        background-color: var(--PrimaryHover);
+
+    }
+
+    #talk-to-us-btn a {
+        color: var(--Background);
+    }
+
+
+
+    #hero-section .mascote-img {
+        display: none;
+    }
+
+    .main .who-are-we {
+        padding: 4rem 1.2rem;
+    }
+
+    .who-are-we h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .who-are-we p {
+        color: var(--ForegroundDark);
+        font-weight: var(--weight-lg);
+        font-size: 1.05rem;
+        text-align: justify;
+    }
+
+    .main .what-we-do {
+        padding: 4rem 1.2rem;
+        background-color: var(--MutedB);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .what-we-do h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .what-we-do .cards {
+        height: 200px;
+        background-color: var(--Background);
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        transition: all .3s ease-in-out;
+        border: 1px solid transparent;
+    }
+
+    .what-we-do .cards:hover {
+        border-color: var(--AccentBlue);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .cards .icon-area {
+        height: 50px;
+        width: 50px;
+        border-radius: var(--radius-md);
+    }
+
+    .icon-area svg {
+        border-radius: var(--radius-md);
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        color: var(--Primary);
+        background-color: var(--MutedB);
+        transition: all .3s ease-in-out;
+    }
+
+    .cards:hover svg {
+        background-color: var(--Primary);
+        color: var(--Background);
+    }
+
+    .cards .desc-area {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .desc-area p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--ForegroundDark);
+        font-size: 1.05rem;
+
+    }
+
+    /*recently works*/
+    .main .recently-projects {
+        padding: 4rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recently-projects h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .recently-projects .project-cards {
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        transition: all .3s ease-in-out;
+        border: 1px solid var(--Muted);
+    }
+
+    .project-cards:hover {
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .project-cards h3 {
+        color: var(--Primary);
+    }
+
+    .project-cards h4 {
+        color: var(--AccentBlue);
+        font-weight: var(--weight-sb);
+    }
+
+    .project-cards p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--ForegroundDark);
+        font-size: 1.05rem;
+
+    }
+
+    .project-cards a {
+        color: var(--Primary);
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        transition: all 5s ease;
+    }
+
+    .project-cards a:hover svg {
+        margin-left: 5px;
+    }
+
+    /*why choose us*/
+    .main .why-choose-us {
+        padding: 4rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--MutedB);
+    }
+ 
+    .why-choose-us .reason-points-divs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-choose-us h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .why-choose-us div {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        margin: 0 10px;
+
+    }
+
+    .why-choose-us p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--AccentBlue);
+        font-size: 1.05rem;
+
+    }
+
+    .why-choose-us svg {
+        color: var(--Primary);
+        flex-shrink: 0;
+
+    }
+
+    /*contact section*/
+    .main .contact-section {
+        padding: 4rem 0;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: var(--Secondary);
+        background-image: linear-gradient(to right, var(--Secondary), var(--Primary));
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+        color: var(--Background);
+    }
+
+    .contact-section button {
+        height: 55px;
+        width: 65%;
+        margin: auto;
+        border: none;
+        border-radius: var(--radius-md);
+        background-color: var(--Background);
+        transition: all .1s ease;
+    }
+
+    .contact-section button:hover {
+        background-color: var(--Muted);
+    }
+
+    .contact-section button a {
+        text-decoration: none;
+        color: var(--AccentBlue);
+        font-size: var(--text-md);
+    }
+
+
 }
 
-#hero-section{
-    height: 100vh;
-    padding: 15px;
-    background-image: linear-gradient(-55deg, var(--Primary), var(--AccentBlue) , var(--Primary));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+@media screen and (min-width: 768px) {
+    #hero-section {
+        padding: 6rem 1.5rem;
+        background-image: linear-gradient(135deg, var(--Primary) 0%, var(--AccentBlue) 45% 55%, var(--Primary)100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 100vh;
+    }
 
-#hero-section .text-inform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: var(--Background);
-}
-.text-inform h1, p{
-    text-align: center;
-}
+    #hero-section .hero-contents {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 95%;
+        height: 80%;
+        gap: 10px;
+    }
 
-.btn-contacts{
- display: flex;
- flex-direction: column;   
- justify-content: center;
- margin-top: 20px;
- width: 100%;
-}
-.btn-contacts button{
-  
-}
-#hero-section .mascote-img{
-    display: none;
+    #hero-section .text-inform {
+        display: flex;
+        flex-direction: column;
+        color: var(--Background);
+        width: 55%;
+    }
+
+    .text-inform h1 {
+        font-size: 3.8rem;
+        width: 650px;
+    }
+
+    .text-inform p {
+        font-size: 1.5rem;
+        text-align: jstify;
+        width: 80%;
+    }
+
+    .text-inform .btn-contacts {
+        display: flex;
+        gap: 12px;
+        margin-top: 25px;
+        width: 55%;
+        height: 110px;
+    }
+
+    .btn-contacts button {
+        height: 50%;
+        width: 50%;
+        border: none;
+        border-radius: var(--radius-md);
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+
+    .btn-contacts button a {
+        text-decoration: none;
+        font-size: var(--text-md);
+    }
+
+    .btn-contacts #require-budget {
+        background-color: var(--Background);
+        color: var(--Primary);
+    }
+
+    .btn-contacts #require-budget:hover {
+        background-color: var(--Muted);
+    }
+
+    #require-budget a {
+        color: var(--Primary);
+    }
+
+
+    .btn-contacts #talk-to-us-btn {
+        background-color: transparent;
+        color: var(--Primary);
+        border: 1px solid var(--CardBackground);
+    }
+
+    .btn-contacts #talk-to-us-btn:hover {
+        background-color: var(--PrimaryHover);
+
+    }
+
+    #talk-to-us-btn a {
+        color: var(--Background);
+    }
+
+
+
+    #hero-section .mascote-img {
+        border-radius: var(--radius-lg);
+        width: 45%;
+        height: 450px;
+    }
+
+    .mascote-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: var(--radius-lg);
+
+    }
+
+    /*who are we*/
+    .main .who-are-we {
+        padding: 5.3rem 1.2rem;
+        width: 55%;
+        margin: auto;
+    }
+
+    .who-are-we h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .who-are-we p {
+        color: var(--ForegroundDark);
+        font-weight: var(--weight-nl1);
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    /*whhat we do*/
+    .main .what-we-do {
+        padding: 5rem 1.2rem;
+        background-color: var(--MutedB);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .what-we-do .services-card-area {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .what-we-do h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .what-we-do .cards {
+        height: 250px;
+        width: 400px;
+        background-color: var(--Background);
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        transition: all .3s ease-in-out;
+        border: 1px solid transparent;
+    }
+
+    .what-we-do .cards:hover {
+        border-color: var(--AccentBlue);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .cards .icon-area {
+        height: 50px;
+        width: 50px;
+        border-radius: var(--radius-md);
+    }
+
+    .icon-area svg {
+        border-radius: var(--radius-md);
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        color: var(--Primary);
+        background-color: var(--MutedB);
+        transition: all .3s ease-in-out;
+    }
+
+    .cards:hover svg {
+        background-color: var(--Primary);
+        color: var(--Background);
+    }
+
+    .cards .desc-area {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .desc-area p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--ForegroundDark);
+        font-size: 1.05rem;
+
+    }
+
+
+    /*recently works*/
+    .main .recently-projects {
+        padding: 5rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recently-projects h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .recently-projects .projects-card-area {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .recently-projects .project-cards {
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        transition: all .3s ease-in-out;
+        border: 1px solid var(--MutedB);
+        width: 350px;
+        height: 480px;
+    }
+
+    .project-cards:hover {
+        box-shadow: 0 10px 23px rgba(0, 0, 0, .15);
+
+    }
+
+    .project-cards h3 {
+        color: var(--Primary);
+        font-size: var(--text-2xl);
+    }
+
+    .project-cards h4 {
+        color: var(--AccentBlue);
+        font-weight: var(--weight-bd);
+    }
+
+    .project-cards p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--ForegroundDark);
+        font-size: 1.05rem;
+
+    }
+
+    .project-cards a {
+        color: var(--Primary);
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        transition: all 5s ease;
+    }
+
+    .project-cards a:hover svg {
+        margin-left: 5px;
+    }
+
+
+    /*why choose us*/
+    .main .why-choose-us {
+        padding: 5.5rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: var(--MutedB);
+    }
+
+     .why-choose-us .reason-points-divs{
+        padding: 5px;
+        width: 800px;
+    }
+    .reason-points-divs div{
+        margin: auto;
+        width: 100%;
+    }
+
+    .why-choose-us h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 12px;
+        margin-bottom: 10px;
+
+    }
+
+    .why-choose-us div {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        margin: 0 10px;
+
+    }
+
+    .why-choose-us p {
+        text-align: start;
+        font-weight: var(--weight-nl1);
+        color: var(--AccentBlue);
+        font-size: 1.05rem;
+
+    }
+
+    .why-choose-us svg {
+        color: var(--Primary);
+        flex-shrink: 0;
+
+    }
+
+    /*contact-section*/
+    .main .contact-section {
+        padding: 5rem 0;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: var(--Secondary);
+        background-image: linear-gradient(to right, var(--Secondary), var(--Primary));
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 12px;
+        margin-bottom: 10px;
+        color: var(--Background);
+    }
+
+    .contact-section button {
+        height: 55px;
+        width: 200px;
+        margin: auto;
+        border: none;
+        border-radius: var(--radius-md);
+        background-color: var(--Background);
+        transition: all .1s ease;
+    }
+
+    .contact-section button:hover {
+        background-color: var(--Muted);
+    }
+
+    .contact-section button a {
+        text-decoration: none;
+        color: var(--Primary);
+        font-size: var(--text-md);
+        font-weight: var(--weight-bd);
+    }
 }

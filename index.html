@@ -10,12 +10,24 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <script src="assets/js/main.js" defer></script>
     <style>
-        #visited {
-            background-color: var(--MutedB);
+        @media screen and (max-width: 768px) {
+            
+            #visited {
+                background-color: var(--MutedB);
+            }
+    
+            #visited a {
+                color: var(--Primary);
+            }
         }
-
-        #visited a {
-            color: var(--Primary);
+        @media screen and (min-width: 768px) {
+            
+          
+    
+            #visited a {
+                color: var(--Primary);
+                font-weight: var(--weight-bd);
+            }
         }
     </style>
 </head>
@@ -42,31 +54,278 @@
                 <li class="nav-item"><a href="contacts.html" class="nav-link">Contactos</a></li>
                 <li class="nav-item" id="talk-to-us"><a href="contacts.html" class="nav-link">Fale Connosco</a></li>
             </ul>
+            <button class="btn-talk-to-us">
+                <a href="contacts.html" class="nav-link">Fale Connosco</a>
+            </button>
         </nav>
     </header>
     <div class="overlay"></div>
 
     <main class="main">
         <section id="hero-section">
-            <div class="text-inform">
-                <h1>Soluções Tecnológicas Inteligentes para Empresas e Particulares</h1> <br>
-                <p>Na CBSP, Lda., oferecemos serviços de tecnologia, desenvolvimento web e comércio de equipamentos informáticos com foco em qualidade, eficiência e confiança.</p>
-
-                <div class="btn-contacts">
-                    <button class="require-budget"><a href="#">Solicitar orçamento</a></button>
-                    <button class="talk-to-us"><a href="contacts.html">Fale Connosco</a></button>
+            <div class="hero-contents">
+                <div class="text-inform">
+                    <h1>Soluções Tecnológicas Inteligentes para Empresas e Particulares</h1> <br>
+                    <p>Na CBSP, Lda., oferecemos serviços de tecnologia, desenvolvimento web e comércio de equipamentos
+                        informáticos com foco em qualidade, eficiência e confiança.</p>
+                    <div class="btn-contacts">
+                        <button id="require-budget"><a href="#">Solicitar orçamento</a></button>
+                        <button id="talk-to-us-btn"><a href="contacts.html">Fale Connosco</a></button>
+                    </div>
+                </div>
+                <div class="mascote-img">
+                    <img src="assets/images/hero/mascote.jpg" alt="chameleon-mascote">
                 </div>
             </div>
-            <div class="mascote-img">
-                <img src="" alt="chameleon-mascote">
+        </section>
+        <section class="who-are-we">
+            <h2>Quem Somos</h2>
+            <p>A CBSP, Lda. é uma empresa angolana focada em soluções tecnológicas modernas, oferecendo serviços de TI,
+                desenvolvimento web e comercialização de equipamentos informáticos para empresas e particulares.
+            </p>
+            <br>
+            <p>Nosso compromisso é simplificar a tecnologia e torná-la acessível, funcional e eficiente para nossos
+                clientes.</p>
+        </section>
+        <section class="what-we-do">
+            <h2>O Que Fazemos</h2>
+
+            <div class="services-card-area">
+                <div class="cards">
+                    <div class="icon-area">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icone">
+                            <path d="m16 18 6-6-6-6" />
+                            <path d="m8 6-6 6 6 6" />
+                        </svg>
+                    </div>
+                    <div class="desc-area">
+                        <h3>Desenvolvimento de Software</h3>
+                        <p>Websites, lojas online, sistemas de gestão e soluções personalizadas.</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="icon-area">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-trending-up-icon lucide-trending-up">
+                            <path d="M16 7h6v6" />
+                            <path d="m22 7-8.5 8.5-5-5L2 17" />
+                        </svg>
+                    </div>
+                    <div class="desc-area">
+                        <h3>Marketing Digital</h3>
+                        <p>Gestão de redes sociais, tráfego pago, design gráfico e estratégias.</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="icon-area">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-wrench-icon lucide-wrench">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
+                        </svg>
+                    </div>
+                    <div class="desc-area">
+                        <h3>Assistência Técnica</h3>
+                        <p>Instalação, configuração e manutenção de redes e equipamentos.</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="recently-projects">
+            <h2>Alguns dos nossos trabalhos recentes</h2>
+
+            <div class="projects-card-area">
+                <div class="project-cards">
+                    <h3>Website Institucional</h3>
+                    <h4>Desafio:</h4>
+                    <p>O cliente precisava de presença digital profissional e moderna.</p>
+                    <h4>Solução:</h4>
+                    <p>Desenvolvemos um website responsivo, organizado e alinhado à identidade da marca.</p>
+                    <h4>Resultado:</h4>
+                    <p>Melhoria na apresentação institucional e maior credibilidade digital.</p>
+                    <a href="">Ver Projecto
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="project-cards">
+                    <h3>Infraestrutura de Rede</h3>
+                    <h4>Desafio:</h4>
+                    <p>Empresa necessitava de uma rede empresarial estável e segura.</p>
+                    <h4>Solução:</h4>
+                    <p>Implementamos uma infraestrutura de rede completa com segurança avançada.</p>
+                    <h4>Resultado:</h4>
+                    <p>Aumento de 40% na produtividade e zero interrupções nos últimos 6 meses.</p>
+                    <a href="">Ver Projecto
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="project-cards">
+                    <h3>Solução Comercial Completa</h3>
+                    <h4>Desafio:</h4>
+                    <p>Cliente precisava de equipamentos e configuração para novo escritório.</p>
+                    <h4>Solução:</h4>
+                    <p>Fornecemos computadores, periféricos e realizamos a instalação completa.</p>
+                    <h4>Resultado:</h4>
+                    <p>Escritório operacional em 48 horas com total satisfação do cliente. </p>
+                    <a href="">Ver Projecto
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="why-choose-us">
+            <h2>Por Que Escolher a CBSP?</h2>
+            <div class="reason-points-divs">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>
+                        Atendimento personalizado
+                    </p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>
+                        Compromisso com qualidade
+                    </p>
+                </div>
+            </div>
+            <div class="reason-points-divs">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p> Soluções adaptadas às necessidades do cliente </p>
+                </div>
+                <div>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>
+                        Foco em inovação e melhoria contínua
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2>Precisa de uma solução tecnológica confiável?</h2>
+            <button><a href="contacts.html">Entre em contacto</a></button>
+        </section>
+
+        <!--FOOTER SECTION-->
+        <footer class="footer">
+            <div class="footer-info">
+                <div class="name-slogan">
+                    <h2>CBSP, Lda</h2>
+                    <p>Soluções tecnológicas inteligentes para empresas e particulares.</p>
+                </div>
+                <div>
+                    <h4>Navegação</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">Sobre</a></p>
+                    <p><a href="services.html">Serviços</a></p>
+                    <p><a href="projects.html">Projetos</a></p>
+                    <p><a href="contacts.html">Contactos</a></p>
+                </div>
+                <div>
+                    <h4>Serviços</h4>
+                    <p>Serviços de TI</p>
+                    <p>Comércio de Electrónicos</p>
+                    <p>Suporte Técnico</p>
+                    <p>Soluções Empresariais</p>
+                </div>
+                <div id="contact-div">
+                    <h4>Contacto</h4>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone-icon lucide-phone">
+                            <path
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>
+                        <a href="+244 244944137349">+244 244944137349</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-message-circle-icon lucide-message-circle">
+                            <path
+                                d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+                        </svg>
+                        <a href="https//wa.me/244944137349">WhatsApp</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail-icon lucide-mail">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                        </svg>
+                        <a href="mailto:suporte.cbsp@gmail.com">suporte.cbsp@gmail.com</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin-icon lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <a href="">Lubango, Angola</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="signature">
+                <p>&copy; 2026 CBSP, Lda. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
+    <button class="whatsapp-button">
+        <a href="https/wa.me/244944137349" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-message-circle-icon lucide-message-circle">
+                <path
+                    d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
+            </svg>
+        </a>
+    </button>
 
-
-    <footer class="footer">
-        Footer
-    </footer>
 </body>
 
 </html>
