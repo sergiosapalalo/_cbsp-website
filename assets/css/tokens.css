@@ -9,7 +9,7 @@
     --Background: #f9f9fb;
     --CardBackground: #ffffff;
     --Muted: #d1d3d4;
-    --MutedB: #e5e7e9;
+    --MutedB: #e5e7e9c2;
     --MutedSmooth: #e5e7e9bb;
 
     --Foreground: #1b1e46;
@@ -19,7 +19,9 @@
     --Destructive: #d4183d;
     --ZapButton: #25d366;
 
+    --Border: #b6b6b662;
     --BorderColor: #ffffff31;
+    
     /*TIPOGRAFIA*/
     --FontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     

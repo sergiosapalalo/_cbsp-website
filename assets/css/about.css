@@ -2,7 +2,7 @@
     .up-section {
         height: 260px;
         padding: 4rem 1.5rem;
-        background-image: linear-gradient(135deg, var(--Primary), var(--AccentBlue));
+        background-image: linear-gradient(175deg, var(--Primary), var(--AccentBlue));
         color: var(--CardBackground);
         display: flex;
         flex-direction: column;
@@ -10,9 +10,6 @@
         gap: 20px;
     }
 
-    .up-section h2 {
-        font-size: 1.8rem;
-    }
 
     .up-section p {
         font-weight: var(--weight-nl1);
@@ -21,7 +18,7 @@
         color: var(--CardBackground);
     }
 
-    .who-are-we {}
+
 
     /*mission & vision*/
     .mission-vision {
@@ -156,32 +153,237 @@
     }
 
     .contact-section .contact-section-btns {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;
-       gap: 13px;
-       margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 13px;
+        margin-top: 20px;
     }
 
     .contact-section-btns button {
         width: 90%;
         height: 50px;
     }
-    .contact-section-btns button:nth-child(1) a{
-        color:  var(--Primary);
+
+    .contact-section-btns button:nth-child(1) a {
+        color: var(--Primary);
     }
-    .contact-section-btns button:nth-child(2){
+
+    .contact-section-btns button:nth-child(2) {
         background-color: transparent;
         border: 1px solid var(--CardBackground);
     }
-    .contact-section-btns button:nth-child(2):hover{
+
+    .contact-section-btns button:nth-child(2):hover {
         background-color: var(--PrimaryHover);
     }
-    .contact-section-btns button:nth-child(2) a{
-        color:  var(--CardBackground);
+
+    .contact-section-btns button:nth-child(2) a {
+        color: var(--CardBackground);
     }
 }
 
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .up-section {
+        height: 260px;
+        padding: 4rem 1.5rem;
+        background-image: linear-gradient(175deg, var(--Primary), var(--AccentBlue));
+        color: var(--CardBackground);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .up-section h1 {
+        font-size: 2.6rem;
+    }
+
+    .up-section p {
+        font-weight: var(--weight-sb);
+        font-size: var(--text-xl);
+        text-align: center;
+        color: var(--CardBackground);
+    }
+
+    
+    /*mission & vision*/
+    .mission-vision {
+        padding: 5rem 1.5rem;
+        background-color: var(--MutedB);
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .mission-vision .mission-vision-cards {
+        height: 310px;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        background-color: var(--CardBackground);
+        border-radius: var(--radius-lg);
+        box-shadow: 0 8px 10px rgba(0, 0, 0, .08);
+        width: 580px;
+    }
+
+    .mission-vision-cards .img-title-card {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .img-title-card h2{
+        font-size: 1.8rem;
+    }
+    .img-title-card .svg-box {
+        height: 70px;
+        width: 70px;
+        padding: 12px;
+        background-color: var(--MutedSmooth);
+        border-radius: var(--radius-full);
+    }
+
+    .img-title-card svg {
+        height: 100%;
+        width: 100%;
+        color: var(--Primary);
+    }
+
+    .mission-vision-cards .desc-mission-vision p {
+        text-align: left;
+        color: var(--ForegroundDark);
+        font-weight: var(--weight-nl);
+        font-size: var(--text-lg);
+    }
+
+
+    /*values*/
+    .values-section {
+        padding: 5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .values-section .title-values {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .title-values h2 {
+        font-size: 2rem;
+    }
+
+    .title-values p {
+        font-size: var(--text-lg);
+        color: var(--ForegroundDark);
+        font-weight: var(--weight-nl);
+    }
+
+    .values-section .cards-value {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 65%;
+    }
+
+    .cards-value .card {
+        border: 1px solid var(--Border);
+        border-radius: var(--radius-lg);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 310px;
+        justify-content: space-evenly;
+        transition: all .3s ease-in-out;
+        gap: 15px;
+    }
+
+    .card:hover {
+        border-color: var(--AccentBlue);
+    }
+
+    .card .svg-box {
+        height: 60px;
+        width: 60px;
+        padding: 12px;
+        background-color: var(--MutedB);
+        border-radius: var(--radius-full);
+    }
+
+    .card svg {
+        height: 100%;
+        width: 100%;
+        color: var(--Primary);
+    }
+   
+    .card p {
+        font-size: var(--text-nl);
+        color: var(--ForegroundDark);
+        font-weight: var(--weight-nl1);
+        text-align: center;
+    }
+
+    /*contact section*/
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .contact-section .text h2{
+        font-size: 2rem;
+    }
+    .contact-section .text p {
+        font-size: var(--text-lg);
+        color: var(--CardBackground);
+        font-weight: var(--weight-nl);
+        text-align: center;
+    }
+
+    .contact-section .contact-section-btns {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        gap: 13px;
+        margin-top: 20px;
+    }
+
+    .contact-section-btns button {
+        height: 55px;
+    }
+    .contact-section-btns button:nth-child(1){
+        width: 46%;
+    }
+    .contact-section-btns button:nth-child(1) a {
+        color: var(--Primary);
+        font-weight: var(--weight-bd);
+    }
+
+    .contact-section-btns button:nth-child(2) {
+        width: 54%;
+        background-color: transparent;
+        border: 2px solid var(--CardBackground);
+    }
+
+    .contact-section-btns button:nth-child(2):hover {
+        background-color: var(--PrimaryHover);
+    }
+
+    .contact-section-btns button:nth-child(2) a {
+        color: var(--CardBackground);
+        font-weight: var(--weight-bd);
+    }
+}
