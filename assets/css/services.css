@@ -1,0 +1,411 @@
+@media screen and (max-width: 768px) {
+
+    .main .software-development,
+    .main .digital-marketing,
+    .main .technique-assistency,
+    .main .electronics-sale {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .main .digital-marketing,
+    .main .electronics-sale {
+        background-color: var(--MutedB);
+    }
+
+    .title-div {
+        padding: 3.2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .title-div h2 {
+        font-size: 1.7rem;
+    }
+
+    .title-div p {
+        font-size: var(--text-lg);
+        color: var(--MutedForeground);
+        font-weight: var(--weight-nl);
+    }
+
+    .software-development .software-cards,
+    .digital-marketing .marketing-cards,
+    .technique-assistency .assistency-cards,
+    .electronics-sale .electronics-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .software-cards .software-card,
+    .marketing-cards .marketing-card,
+    .assistency-cards .assistency-card,
+    .electronics-cards .electronics-card {
+        border: 1px solid var(--Border);
+        border-radius: var(--radius-lg);
+        padding: 2.5rem 2rem;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+    }
+
+    .marketing-cards .marketing-card,
+    .electronics-cards .electronics-card {
+        background-color: var(--CardBackground);
+        border-color: var(--CardBackground);
+    }
+
+    .software-card:hover,
+    .marketing-card:hover,
+    .assistency-card:hover,
+    .electronics-card:hover {
+        border-color: var(--AccentBlue);
+    }
+
+    .software-card .software-img,
+    .marketing-card .marketing-img,
+    .assistency-card .assistency-img,
+    .electronics-card .electronics-img {
+        display: flex;
+        height: 48px;
+        width: 48px;
+        flex-shrink: 0;
+        align-items: start;
+        background-color: var(--MutedSmooth);
+        border-radius: var(--radius-sm);
+    }
+
+
+    .software-img svg,
+    .marketing-img svg,
+    .assistency-img svg,
+    .electronics-img svg {
+        padding: 12px;
+        align-self: flex-start;
+        height: 100%;
+        width: 100%;
+        color: var(--Primary);
+        transition: all .3s ease-in-out;
+        border-radius: var(--radius-sm);
+
+    }
+
+    .software-card:hover svg,
+    .marketing-card:hover svg,
+    .assistency-card:hover svg,
+    .electronics-card:hover svg {
+        background-color: var(--Primary);
+        color: var(--Background);
+    }
+
+    .software-card .software-desc,
+    .marketing-card .marketing-desc,
+    .assistency-card .assistency-desc,
+    .electronics-card .electronics-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: center;
+    }
+
+    .software-desc h3 {}
+
+    .software-desc p,
+    .marketing-desc p,
+    .assistency-dsec p,
+    .electronics-desc p {
+        font-weight: var(--weight-nl);
+        color: var(--MutedForeground);
+    }
+
+    .btn-orcamento {
+        margin: 2rem;
+        padding: 1rem;
+        border: none;
+        border-radius: var(--radius-sm);
+        background-color: var(--Primary);
+        width: 200px;
+        height: 50px;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn-orcamento:hover {
+        background-color: var(--AccentBlue);
+    }
+
+    .btn-orcamento a {
+        text-decoration: none;
+        color: var(--Background);
+        font-size: var(--text-md);
+    }
+
+    /*contact section*/
+
+    .contact-section {
+        padding: 4rem 0;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: var(--Secondary);
+        background-image: linear-gradient(to right, var(--Secondary), var(--Primary));
+    }
+
+    .contact-section .text {
+        width: 90%;
+
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+        color: var(--CardBackground);
+    }
+
+    .contact-section .text p {
+        font-size: var(--text-lg);
+        color: var(--CardBackground);
+        font-weight: var(--weight-nl);
+        text-align: center;
+    }
+
+    .contact-section-btns button {
+        width: 50%;
+        border: none;
+        border-radius: var(--radius-sm);
+        transition: all .2s ease;
+    }
+
+    .contact-section button:hover {
+        background-color: var(--Muted);
+    }
+
+    .contact-section button a {
+        text-decoration: none;
+        color: var(--AccentBlue);
+        font-size: var(--text-md);
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .main .software-development,
+    .main .digital-marketing,
+    .main .technique-assistency,
+    .main .electronics-sale {
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .digital-marketing,
+    .main .electronics-sale {
+        background-color: var(--MutedB);
+    }
+
+    .title-div {
+        padding: 3.2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .title-div h2 {
+        font-size: 2rem;
+    }
+
+    .title-div p {
+        font-size: var(--text-lg);
+        color: var(--MutedForeground);
+        font-weight: var(--weight-nl);
+    }
+
+     .software-development .software-cards,
+    .digital-marketing .marketing-cards,
+    .technique-assistency .assistency-cards,
+    .electronics-sale .electronics-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 1030px;
+        margin: auto;
+    }
+    .electronics-cards{
+        justify-content: center;
+
+    }
+    .electronics-cards .electronics-card{
+          border: 1px solid var(--Border);
+        border-radius: var(--radius-lg);
+        padding: 3rem 2rem;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        width: 900px;
+    }
+
+    .software-cards .software-card,
+    .marketing-cards .marketing-card,
+    .assistency-cards .assistency-card {
+        border: 1px solid var(--Border);
+        border-radius: var(--radius-lg);
+        padding: 3rem 2rem;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        width: 500px;
+    }
+
+    .marketing-cards .marketing-card,
+    .electronics-cards .electronics-card {
+        background-color: var(--CardBackground);
+        border-color: var(--CardBackground);
+    }
+
+    .software-card:hover,
+    .marketing-card:hover,
+    .assistency-card:hover,
+    .electronics-card:hover {
+        border-color: var(--AccentBlue);
+    }
+
+    .software-card .software-img,
+    .marketing-card .marketing-img,
+    .assistency-card .assistency-img,
+    .electronics-card .electronics-img {
+        display: flex;
+        height: 50px;
+        width: 50px;
+        flex-shrink: 0;
+        align-items: start;
+        background-color: var(--MutedSmooth);
+        border-radius: var(--radius-sm);
+    }
+
+
+    .software-img svg,
+    .marketing-img svg,
+    .assistency-img svg,
+    .electronics-img svg {
+        padding: 12px;
+        align-self: flex-start;
+        height: 100%;
+        width: 100%;
+        color: var(--Primary);
+        transition: all .3s ease-in-out;
+        border-radius: var(--radius-sm);
+
+    }
+
+    .software-card:hover svg,
+    .marketing-card:hover svg,
+    .assistency-card:hover svg,
+    .electronics-card:hover svg {
+        background-color: var(--Primary);
+        color: var(--Background);
+    }
+
+    .software-card .software-desc,
+    .marketing-card .marketing-desc,
+    .assistency-card .assistency-desc,
+    .electronics-card .electronics-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: center;
+    }
+
+    .software-desc h3 {}
+
+    .software-desc p,
+    .marketing-desc p,
+    .assistency-dsec p,
+    .electronics-desc p {
+        font-weight: var(--weight-nl);
+        color: var(--MutedForeground);
+    }
+
+    .btn-orcamento {
+        margin: 2rem;
+        padding: 1rem;
+        border: none;
+        border-radius: var(--radius-sm);
+        background-color: var(--Primary);
+        width: 200px;
+        height: 50px;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn-orcamento:hover {
+        background-color: var(--AccentBlue);
+    }
+
+    .btn-orcamento a {
+        text-decoration: none;
+        color: var(--Background);
+        font-size: var(--text-md);
+    }
+
+    /*contact section*/
+
+    .contact-section {
+        padding: 4rem 0;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: var(--Secondary);
+        background-image: linear-gradient(to right, var(--Secondary), var(--Primary));
+    }
+
+    .contact-section .text {
+        width: 90%;
+
+    }
+
+    .contact-section h2 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 12px;
+        margin-bottom: 10px;
+        color: var(--CardBackground);
+    }
+
+    .contact-section .text p {
+        font-size: var(--text-lg);
+        color: var(--CardBackground);
+        font-weight: var(--weight-nl);
+        text-align: center;
+    }
+
+    .contact-section-btns button {
+        border: none;
+        border-radius: var(--radius-sm);
+        transition: all .2s ease;
+        margin: auto;
+    }
+
+    .contact-section button:hover {
+        background-color: var(--Muted);
+    }
+
+    .contact-section button a {
+        text-decoration: none;
+        color: var(--AccentBlue);
+        font-size: var(--text-md);
+        font-weight: var(--weight-br);
+    }
+}

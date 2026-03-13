@@ -102,7 +102,7 @@
 
     .who-are-we p {
         color: var(--ForegroundDark);
-        font-weight: var(--weight-lg);
+        font-weight: var(--weight-nl);
         font-size: 1.05rem;
         text-align: justify;
     }
@@ -416,7 +416,7 @@
 
     #hero-section .mascote-img {
         border-radius: var(--radius-lg);
-        width: 45%;
+        width: 50%;
         height: 450px;
     }
 
@@ -443,8 +443,8 @@
     }
 
     .who-are-we p {
-        color: var(--ForegroundDark);
-        font-weight: var(--weight-nl1);
+        color: var(--MutedForeground);
+        font-weight: var(--weight-nl);
         font-size: 1.05rem;
         text-align: center;
     }
@@ -521,8 +521,8 @@
 
     .desc-area p {
         text-align: start;
-        font-weight: var(--weight-nl1);
-        color: var(--ForegroundDark);
+        font-weight: var(--weight-nl);
+        color: var(--MutedForeground);
         font-size: 1.05rem;
 
     }
@@ -581,8 +581,8 @@
 
     .project-cards p {
         text-align: start;
-        font-weight: var(--weight-nl1);
-        color: var(--ForegroundDark);
+        font-weight: var(--weight-nl);
+        color: var(--MutedForeground);
         font-size: 1.05rem;
 
     }

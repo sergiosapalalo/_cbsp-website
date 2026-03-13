@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/tokens.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/services.css">
     <script src="assets/js/main.js" defer></script>
 
     <style>
-      @media screen and (max-width: 768px) {
-            
+        @media screen and (max-width: 768px) {
+
             #visited {
                 background-color: var(--MutedB);
             }
-    
+
             #visited a {
                 color: var(--Primary);
             }
         }
+
         @media screen and (min-width: 768px) {
-            
-          
-    
+
+
+
             #visited a {
                 color: var(--Primary);
                 font-weight: var(--weight-bd);
@@ -36,7 +38,7 @@
 <body>
     <header class="header">
         <nav class="nav-bar">
-               <div class="logo-btn">
+            <div class="logo-btn">
                 <div class="logo">
                     <h3>CBSP</h3> <span>Lda</span>
                 </div>
@@ -54,19 +56,199 @@
                 <li class="nav-item"><a href="contacts.html" class="nav-link">Contactos</a></li>
                 <li class="nav-item" id="talk-to-us"><a href="contacts.html" class="nav-link">Fale Connosco</a></li>
             </ul>
-       <button class="btn-talk-to-us">
+            <button class="btn-talk-to-us">
                 <a href="contacts.html" class="nav-link">Fale Connosco</a>
             </button>
         </nav>
     </header>
-<div class="overlay"></div>
+    <div class="overlay"></div>
 
     <main class="main">
         <section class="up-section">
-            <h2>Nossos Serviços</h2>
+            <h1>Nossos Serviços</h1>
             <p>Soluções completas em tecnologia e marketing para o seu negócio</p>
         </section>
 
+        <!--SOFTWARE DEVELOPMENT SERVICES-->
+        <section class="software-development">
+            <div class="title-div">
+                <h2>Desenvolvimento de Software</h2>
+                <p>Criação de sistemas e aplicações personalizadas</p>
+            </div>
+            <div class="software-cards">
+                <div class="software-card">
+                    <div class="software-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-icon lucide-monitor"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+
+                    </div>
+                    <div class="software-desc">
+                        <h3>Sistemas de gestão interna</h3>
+                        <p>Soluções personalizadas para gestão empresarial.</p>
+                    </div>
+                </div>
+                <div class="software-card">
+                    <div class="software-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag-icon lucide-shopping-bag"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>
+
+                    </div>
+                    <div class="software-desc">
+                        <h3>Lojas online</h3>
+                        <p>E-commerce completo para vender online.</p>
+                    </div>
+                </div>
+                <div class="software-card">
+                    <div class="software-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+
+                    </div>
+                    <div class="software-desc">
+                        <h3>Websites</h3>
+                        <p>Sites profissionais e responsivos.</p>
+                    </div>
+                </div>
+                <div class="software-card">
+                    <div class="software-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+
+                    </div>
+                    <div class="software-desc">
+                        <h3>Páginas de venda</h3>
+                        <p>Landing pages otimizadas para conversão.</p>
+                    </div>
+                </div>
+                <div class="software-card">
+                    <div class="software-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+
+                    </div>
+                    <div class="software-desc">
+                        <h3>Sistemas personalizados</h3>
+                        <p>Desenvolvimento sob medida para o seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-orcamento"><a href="">Solicitar Orçamento</a></button>
+        </section>
+
+        <!--MARKETING SERVICES-->
+        <section class="digital-marketing">
+            <div class="title-div">
+                <h2>Marketing Digital</h2>
+                <p>Estratégias para aumentar a sua presença online</p>
+            </div>
+            <div class="marketing-cards">
+                <div class="marketing-card">
+                    <div class="marketing-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2-icon lucide-share-2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+
+                    </div>
+                    <div class="marketing-desc">
+                        <h3>Gestão de redes sociais</h3>
+                        <p>Criação de conteúdo e gestão de presença digital.</p>
+                    </div>
+                </div>
+                <div class="marketing-card">
+                    <div class="marketing-img">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target-icon lucide-target"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+
+
+                    </div>
+                    <div class="marketing-desc">
+                        <h3>Tráfego pago</h3>
+                        <p>Campanhas publicitárias em redes sociais e Google.</p>
+                    </div>
+                </div>
+                <div class="marketing-card">
+                    <div class="marketing-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette-icon lucide-palette"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+
+
+                    </div>
+                    <div class="marketing-desc">
+                        <h3>Design gráfico</h3>
+                        <p>Criação de identidade visual e materiais gráficos.</p>
+                    </div>
+                </div>
+                <div class="marketing-card">
+                    <div class="marketing-img">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up-icon lucide-trending-up"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+
+
+                    </div>
+                    <div class="marketing-desc">
+                        <h3>Estratégia de marketing</h3>
+                        <p>Planeamento estratégico para crescimento digital.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-orcamento"><a href="">Solicitar Orçamento</a></button>
+
+        </section>
+
+        <!--TECHNIQUE ASSISTENCY-->
+        <section class="technique-assistency">
+            <div class="title-div">
+                <h2>Assistência Técnica</h2>
+                <p>Instalação, configuração e manutenção especializada</p>
+            </div>
+
+            <div class="assistency-cards">
+                <div class="assistency-card">
+                    <div class="assistency-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi-icon lucide-wifi"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></svg>
+
+                    </div>
+                    <div class="assistency-desc">
+                        <h3>Instalação e configuração de redes</h3>
+                        <p>Redes internas seguras e estáveis.</p>
+                    </div>
+                </div>
+                <div class="assistency-card">
+                    <div class="assistency-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
+
+                    </div>
+                    <div class="assistency-desc">
+                        <h3>Manutenção técnica</h3>
+                        <p>Manutenção de aparelhos e softwares.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-orcamento"><a href="">Solicitar Orçamento</a></button>
+
+        </section>
+        <!--ELECTRONICS SALE-->
+        <section class="electronics-sale">
+            <div class="title-div">
+                <h2>Venda de Eletrónicos</h2>
+                <p>Venda de headphones, airpods, carregadores, cabos e mais</p>
+            </div>
+
+            <div class="electronics-cards">
+                <div class="electronics-card">
+                    <div class="electronics-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones-icon lucide-headphones"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
+
+                    </div>
+                    <div class="electronics-desc">
+                        <h3>Acessórios e Eletrónicos</h3>
+                        <p>Oferecemos uma ampla variedade de acessórios eletrónicos de qualidade, incluindo headphones, airpods, carregadores, cabos e muito mais.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-orcamento"><a href="">Ver Produtos</a></button>
+
+        </section>
+
+          <section class="contact-section">
+            <div class="text">
+                <h2>Pronto para começar?</h2>
+                <p>Entre em contacto e solicite um orçamento personalizado</p>
+            </div>
+            <div class="contact-section-btns">
+                <button><a href="contacts.html">Fale Connosco</a></button>
+            </div>
+        </section>
 
         <!--FOOTER SECTION-->
         <footer class="footer">
@@ -99,7 +281,7 @@
                             <path
                                 d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
                         </svg>
-                        <a href="+244 244944137349">+244 244944137349</a>
+                        <a href="+244 944137349">+244 944137349</a>
                     </p>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -139,7 +321,7 @@
     </main>
 
     <button class="whatsapp-button">
-        <a href="https/wa.me/244944137349" >
+        <a href="https/wa.me/244944137349">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-message-circle-icon lucide-message-circle">
@@ -149,7 +331,7 @@
         </a>
     </button>
 
-   
+
 </body>
 
 </html>
