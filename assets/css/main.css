@@ -14,6 +14,7 @@ body {
     letter-spacing: 1px;
 }
 
+
 .header {
     grid-area: header;
     border-bottom: 1px solid var(--Muted);
@@ -405,9 +406,15 @@ body {
         text-decoration: none;
     }
 
+    .btn-talk-to-us:hover a {
+        color: var(--Background);
+
+    }
+
     .btn-talk-to-us:hover {
         transition: background-color .5s ease;
         background-color: var(--AccentBlue);
+        color: var(--Background);
     }
 
 

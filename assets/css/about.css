@@ -63,7 +63,7 @@
 
     .mission-vision-cards .desc-mission-vision p {
         text-align: left;
-        color: var(--ForegroundDark);
+        color: var(--MutedForeground);
         font-weight: var(--weight-nl1);
         font-size: var(--text-md);
     }
@@ -90,7 +90,7 @@
 
     .title-values p {
         font-size: var(--text-lg);
-        color: var(--ForegroundDark);
+        color: var(--MutedForeground);
         font-weight: var(--weight-nl1);
     }
 
@@ -131,9 +131,9 @@
         color: var(--Primary);
     }
 
-    .car p {
+    .card p {
         font-size: var(--text-lg);
-        color: var(--ForegroundDark);
+        color: var(--MutedForeground);
         font-weight: var(--weight-nl1);
     }
 
@@ -255,7 +255,7 @@
 
     .mission-vision-cards .desc-mission-vision p {
         text-align: left;
-        color: var(--ForegroundDark);
+        color: var(--MutedForeground);
         font-weight: var(--weight-nl);
         font-size: var(--text-lg);
     }
@@ -284,7 +284,7 @@
 
     .title-values p {
         font-size: var(--text-lg);
-        color: var(--ForegroundDark);
+        color: var(--MutedForeground);
         font-weight: var(--weight-nl);
     }
 
@@ -330,8 +330,8 @@
    
     .card p {
         font-size: var(--text-nl);
-        color: var(--ForegroundDark);
-        font-weight: var(--weight-nl1);
+        color: var(--MutedForeground);
+        font-weight: var(--weight-nl);
         text-align: center;
     }
 
