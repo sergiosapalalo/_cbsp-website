@@ -194,7 +194,7 @@
         height: 100%;
         width: 100%;
         border-radius: var(--radius-lg);
-
+        object-fit: cover;
     }
 
     /*ABOUT SYSTEMS*/
@@ -267,9 +267,10 @@
         color: var(--Foreground);
     }
 
-    .contact-section .contact-section-btns{
+    .contact-section .contact-section-btns {
         width: 400px;
     }
+
     .contact-section button {
         width: 100%;
     }
