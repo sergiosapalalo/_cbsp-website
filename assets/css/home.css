@@ -117,10 +117,10 @@
     }
 
     .who-are-we p {
-        color: var(--MutedForeground);
+        color: var(--ForegroundDark);
         font-weight: var(--weight-nl1);
         font-size: 1.05rem;
-        text-align: justify;
+        text-algn: justify;
     }
 
     .main .what-we-do {
