@@ -7,7 +7,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         min-height: 100vh;
+    }
+
+    .hero-contents .logo-img {
+        height: 160px;
+        width: 160px;
+        margin: auto;
+        margin-top: -50px;
+    }
+
+    .logo-img img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
     }
 
     #hero-section .text-inform {
@@ -247,8 +261,8 @@
         gap: 20px;
         background-color: var(--MutedB);
     }
- 
-    .why-choose-us .reason-points-divs{
+
+    .why-choose-us .reason-points-divs {
         display: flex;
         flex-direction: column;
     }
@@ -341,6 +355,10 @@
         width: 95%;
         height: 80%;
         gap: 10px;
+    }
+
+    .hero-contents .logo-img {
+        display: none;
     }
 
     #hero-section .text-inform {
@@ -610,11 +628,12 @@
         background-color: var(--MutedB);
     }
 
-     .why-choose-us .reason-points-divs{
+    .why-choose-us .reason-points-divs {
         padding: 5px;
         width: 800px;
     }
-    .reason-points-divs div{
+
+    .reason-points-divs div {
         margin: auto;
         width: 100%;
     }

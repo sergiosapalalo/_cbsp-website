@@ -12,6 +12,12 @@ body {
     font-family: var(--FontFamily);
     color: var(--Foreground);
     letter-spacing: 1px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+
 }
 
 
