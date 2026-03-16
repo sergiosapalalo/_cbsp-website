@@ -127,6 +127,9 @@
         border-radius: var(--radius-sm);
 
     }
+    .input-box input:-webkit-autofill{
+        -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+    }
 
     select {
         width: 100%;
@@ -436,6 +439,9 @@
         border: 1px solid var(--Border);
         border-radius: var(--radius-sm);
 
+    }
+     .input-box input:-webkit-autofill{
+        -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
     }
 
     select {
