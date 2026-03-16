@@ -1,11 +1,9 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .main {
         margin-top: 10px;
     }
 
     .main .back-to-projects-link {
-        display: flex;
-        gap: 5px;
         padding: 1.5rem 1rem;
         background-color: var(--MutedB);
     }
@@ -15,6 +13,8 @@
     }
 
     .back-to-projects-link a {
+        display: flex;
+        gap: 5px;
         text-decoration: none;
         color: var(--MutedForeground);
         font-weight: var(--weight-nl);
@@ -96,16 +96,20 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
+        align-items: center;
     }
 
     .system-features h2 {
         font-size: var(--text-3xl);
+        align-self: flex-start;
     }
 
     .system-features .feature-cards {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        width: 100%;
     }
 
     .feature-cards .feature-card {
@@ -114,6 +118,7 @@
         display: flex;
         gap: 10px;
         border-radius: var(--radius-sm);
+        
     }
 
     .feature-card svg {
@@ -126,15 +131,13 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
     .main {
         margin-top: 70px;
     }
 
     /*BACK PROJECTS LINK*/
     .main .back-to-projects-link {
-        display: flex;
-        gap: 5px;
         padding: 1.8rem;
         background-color: var(--MutedB);
     }
@@ -144,6 +147,8 @@
     }
 
     .back-to-projects-link a {
+        display: flex;
+        gap: 5px;
         text-decoration: none;
         color: var(--MutedForeground);
         font-weight: var(--weight-nl);
@@ -273,5 +278,39 @@
 
     .contact-section button {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1280px) {
+    .about-system div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 75%;
+    }
+
+    .about-system h2 {
+        text-align: center;
+    }
+
+    .system-features .feature-div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .system-features h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .system-features .feature-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }

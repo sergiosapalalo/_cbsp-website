@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .header {
         z-index: 9999;
     }
@@ -97,12 +97,10 @@
         color: var(--MutedForeground);
     }
 
-    .project-desc .details-link {
+    
+    .details-link a {
         display: flex;
         gap: 5px;
-    }
-
-    .details-link a {
         color: var(--Primary);
         text-decoration: none;
     }
@@ -175,7 +173,7 @@
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
     .header {
         z-index: 9999;
     }
@@ -218,6 +216,7 @@
 
     .projects-section .project-cards {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
         width: 80%;
@@ -286,12 +285,11 @@
         color: var(--MutedForeground);
     }
 
-    .project-desc .details-link {
+  
+    
+    .details-link a {
         display: flex;
         gap: 5px;
-    }
-
-    .details-link a {
         color: var(--Primary);
         text-decoration: none;
     }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
 
 
     #hero-section {
@@ -120,7 +120,6 @@
         color: var(--ForegroundDark);
         font-weight: var(--weight-nl1);
         font-size: 1.05rem;
-        text-algn: justify;
     }
 
     .main .what-we-do {
@@ -340,7 +339,8 @@
 
 }
 
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 991px) {
     #hero-section {
         padding: 6rem 1.5rem;
         background-image: linear-gradient(135deg, var(--Primary) 0%, var(--AccentBlue) 45% 55%, var(--Primary)100%);
