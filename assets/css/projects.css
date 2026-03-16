@@ -97,12 +97,10 @@
         color: var(--MutedForeground);
     }
 
-    .project-desc .details-link {
+    
+    .details-link a {
         display: flex;
         gap: 5px;
-    }
-
-    .details-link a {
         color: var(--Primary);
         text-decoration: none;
     }
@@ -286,12 +284,11 @@
         color: var(--MutedForeground);
     }
 
-    .project-desc .details-link {
+  
+    
+    .details-link a {
         display: flex;
         gap: 5px;
-    }
-
-    .details-link a {
         color: var(--Primary);
         text-decoration: none;
     }

@@ -78,7 +78,10 @@ html{
         display: flex;
         gap: 5px;
         font-size: var(--text-lg);
+    }
+    .logo a{
         color: var(--Primary);
+        text-decoration: none;
     }
 
     .logo span {
@@ -356,10 +359,14 @@ html{
     }
 
     .logo {
-        display: flex;
-        gap: 5px;
         font-size: var(--text-lg);
         color: var(--Primary);
+    }
+    .logo a{
+         display: flex;
+         gap: 5px;
+        color: var(--Primary);
+        text-decoration: none;
     }
 
     .logo h3 {

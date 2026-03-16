@@ -4,8 +4,6 @@
     }
 
     .main .back-to-projects-link {
-        display: flex;
-        gap: 5px;
         padding: 1.5rem 1rem;
         background-color: var(--MutedB);
     }
@@ -15,6 +13,8 @@
     }
 
     .back-to-projects-link a {
+        display: flex;
+        gap: 5px;
         text-decoration: none;
         color: var(--MutedForeground);
         font-weight: var(--weight-nl);
@@ -133,8 +133,6 @@
 
     /*BACK PROJECTS LINK*/
     .main .back-to-projects-link {
-        display: flex;
-        gap: 5px;
         padding: 1.8rem;
         background-color: var(--MutedB);
     }
@@ -144,6 +142,8 @@
     }
 
     .back-to-projects-link a {
+        display: flex;
+        gap: 5px;
         text-decoration: none;
         color: var(--MutedForeground);
         font-weight: var(--weight-nl);
