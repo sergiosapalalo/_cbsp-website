@@ -338,7 +338,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #hero-section {
         padding: 6rem 1.5rem;
         background-image: linear-gradient(135deg, var(--Primary) 0%, var(--AccentBlue) 45% 55%, var(--Primary)100%);
