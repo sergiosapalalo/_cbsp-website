@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .header {
         z-index: 9999;
     }
@@ -173,7 +173,7 @@
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
     .header {
         z-index: 9999;
     }
@@ -216,6 +216,7 @@
 
     .projects-section .project-cards {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
         width: 80%;

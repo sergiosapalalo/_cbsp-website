@@ -33,7 +33,7 @@ html{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     body {
         grid-template: 60px 1fr / 1fr;
 
@@ -324,7 +324,7 @@ html{
 
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
 
     .header {
         height: 70px;

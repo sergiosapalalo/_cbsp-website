@@ -1,4 +1,12 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .main {
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+
     .main .contacts-info {
         padding: 1.5rem 1rem;
         margin-bottom: 1.7rem;
@@ -127,7 +135,8 @@
         border-radius: var(--radius-sm);
 
     }
-    .input-box input:-webkit-autofill{
+
+    .input-box input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
     }
 
@@ -310,7 +319,7 @@
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 991px) {
     .main .contacts-info {
         padding: 1.5rem 1rem;
         margin-bottom: 1.7rem;
@@ -441,7 +450,8 @@
         border-radius: var(--radius-sm);
 
     }
-     .input-box input:-webkit-autofill{
+
+    .input-box input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
     }
 
