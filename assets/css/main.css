@@ -12,6 +12,12 @@ body {
     font-family: var(--FontFamily);
     color: var(--Foreground);
     letter-spacing: 1px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+
 }
 
 
@@ -315,7 +321,7 @@ body {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
     .header {
         height: 70px;

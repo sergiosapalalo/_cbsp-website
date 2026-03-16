@@ -32,3 +32,21 @@ overlay.addEventListener('click', () => {
     document.body.classList.remove('no-scroll')
 
 })
+
+/*FADE OUT EFFECT AMONG PAGES TRANSITION*/
+/*
+const links = document.querySelectorAll('.nav-bar a')
+
+links.forEach(link =>{
+    link.addEventListener('click', function(e){
+        if (this.hostname === window.location.hostname) {
+            e.preventDefault()
+            document.body.classList.add('fade-out')
+
+            setTimeout(() => {
+                window.location = this.ref
+            }, 400);
+        }
+    })
+})
+    */
