@@ -43,6 +43,8 @@
     .text-inform p {
         font-size: 1.05rem;
         text-align: jstify;
+        font-weight: var(--weight-nl1);
+        color: var(--CardBackground);
     }
 
     .text-inform .btn-contacts {
@@ -115,8 +117,8 @@
     }
 
     .who-are-we p {
-        color: var(--ForegroundDark);
-        font-weight: var(--weight-nl);
+        color: var(--MutedForeground);
+        font-weight: var(--weight-nl1);
         font-size: 1.05rem;
         text-align: justify;
     }
